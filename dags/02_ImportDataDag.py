@@ -16,7 +16,7 @@ dag = DAG(
 
 first_task = BashOperator(
     task_id="first_task",
-    bash_command='echo "02_ImportDataDag" & sleep 180',
+    bash_command='echo "02_ImportDataDag" & sleep 2',
     dag=dag)
 
 dag_complete = BashOperator(
