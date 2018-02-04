@@ -14,6 +14,7 @@ dag = DAG(
 def my_func(**kwargs):
     context = kwargs
     print(context['dag_run'].run_id)
+    print(context['dag_run'].id)
 
 
 t1 = PythonOperator(
